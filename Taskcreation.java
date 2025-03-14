@@ -14,7 +14,7 @@ public class Taskcreation {
                   return;
               }
 
-              System.out.println("Enter Due Date (YYYY-MM-DD HH:MM) or press enter for no deadline:");
+              System.out.println("Enter Due Date (YYYY-MM-DD HH:MM) or enter for no deadline:");
               String duedateinput = sc.nextLine();
               LocalDateTime duedate = duedateinput.isEmpty()? null:LocalDateTime.parse(duedateinput.replace(" ", "T"));
 
